@@ -577,7 +577,10 @@
 .navbar-nav i:hover {
     color: lightseagreen;
     transition: all ease-in 1s;
- 
+    -webkit-transition: all ease-in 1s;
+    -moz-transition: all ease-in 1s;
+    -ms-transition: all ease-in 1s;
+    -o-transition: all ease-in 1s;
 }
 
 .nav-link {
@@ -589,7 +592,10 @@
     color: blue;
     border-bottom: violet 1px solid;
     transition: all ease-in-out 1s;
- 
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+    -ms-transition: all ease-in-out 1s;
+    -o-transition: all ease-in-out 1s;
 }
 
 /*End  Nav*/
@@ -614,8 +620,8 @@
 
 .main-text span {
     color: black;
-    animation: text-shadow 1.5s ease-in-out infinite;
-    -webkit-animation: text-shadow 1.5s ease-in-out infinite;
+    animation: text-shadow 2s ease-in-out infinite;
+    -webkit-animation: text-shadow 2s ease-in-out infinite;
 }
 
 
@@ -628,12 +634,12 @@
     color: black;
     font-size: 2rem;
     font-weight: bolder;
-    animation: scale-in-top 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-top 7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     -webkit-transform: translate(-00%, -40%);
     -moz-transform: translate(-00%, -40%);
     -ms-transform: translate(-00%, -40%);
     -o-transform: translate(-00%, -40%);
-    -webkit-animation: scale-in-top 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: scale-in-top 7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -668,8 +674,8 @@
     font-size: 3rem;
     text-shadow: -1px 10px 0px rgba(0, 0, 0, 0.41);
     font-weight: 500;
-    animation: scale-in-top 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    -webkit-animation: scale-in-top 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-top 9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: scale-in-top 9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -682,11 +688,11 @@
 
 .why-me p:hover {
     color: indigo;
-    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 2s all;
-    -webkit-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 2s all;
-    -moz-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 2s all;
-    -ms-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 2s all;
-    -o-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 2s all;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 10s all;
+    -webkit-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 10s all;
+    -moz-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 10s all;
+    -ms-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 10s all;
+    -o-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 10s all;
 }
 
 
@@ -715,8 +721,8 @@
 
 
 .why-me h4 {
-    animation: jello-horizontal 9s both;
-    -webkit-animation: jello-horizontal 9s both;
+    animation: jello-horizontal 10s both;
+    -webkit-animation: jello-horizontal 10s both;
 }
 
 .why-me h4:hover {
@@ -734,8 +740,8 @@
     text-shadow: -1px 10px 0px rgba(255, 31, 31, 0.41);
     -webkit-animation-name: slideInLeft;
     animation-name: slideInLeft;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
+    -webkit-animation-duration: 9s;
+    animation-duration: 9s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -751,8 +757,8 @@
     font-size: 3rem;
     text-shadow: -1px 10px 0px rgba(0, 0, 0, 0.41);
     font-weight: 500;
-    animation: scale-in-top 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    -webkit-animation: scale-in-top 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: scale-in-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     text-align: center;
 }
 
@@ -776,8 +782,8 @@
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    animation: color-change-2x 7s linear infinite alternate both;
-    -webkit-animation: color-change-2x 7s linear infinite alternate both;
+    animation: color-change-2x 18s linear infinite alternate both;
+    -webkit-animation: color-change-2x 18s linear infinite alternate both;
     transition: ease-in-out 3s all;
     -webkit-transition: ease-in-out 3s all;
     -moz-transition: ease-in-out 3s all;
@@ -804,9 +810,9 @@
     font-size: 3rem;
     text-shadow: -1px 10px 0px rgba(0, 0, 0, 0.41);
     font-weight: 500;
-    animation: scale-in-top 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     text-align: center;
-    -webkit-animation: scale-in-top 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: scale-in-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .my-skills h3:hover {
