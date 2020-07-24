@@ -260,7 +260,7 @@
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
-}
+    }
 }
 
 @keyframes scale-in-top {
@@ -273,7 +273,7 @@
         -moz-transform: scale(0);
         -ms-transform: scale(0);
         -o-transform: scale(0);
-}
+    }
 
     100% {
         -webkit-transform: scale(1);
@@ -315,7 +315,10 @@
     0% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
-    }
+        -moz-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        -o-transform: scale3d(1, 1, 1);
+}
 
     30% {
         -webkit-transform: scale3d(1.25, 0.75, 1);
@@ -360,7 +363,10 @@
     100% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
-    }
+        -moz-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        -o-transform: scale3d(1, 1, 1);
+}
 }
 
 @keyframes jello-horizontal {
@@ -504,36 +510,37 @@
     background-color: black !important;
     background: black !important;
     color: white;
-    box-shadow:  #14213D 5px 5px 5px 5px;
+    box-shadow: #14213D 5px 5px 5px 5px;
 
 }
 
-.dark-mode body{
-    color: white;
-}
-
-.dark-mode  .card .card-body {
+.dark-mode body {
     color: white;
     background-color: black;
 }
 
-.dark-mode .projects{
+.dark-mode .card .card-body {
+    color: white;
     background-color: black;
 }
 
-.dark-mode .education{
+.dark-mode .projects {
     background-color: black;
 }
 
-.dark-mode .table  thead{
+.dark-mode .education {
+    background-color: black;
+}
+
+.dark-mode .table thead {
     color: aqua;
 }
 
-.dark-mode .table  tbody{
+.dark-mode .table tbody {
     color: white;
 }
 
-.dark-mode nav{
+.dark-mode nav {
     background-color: black;
 }
 
@@ -546,7 +553,7 @@
 .navbar {
     margin-bottom: 0;
     padding: 0;
-    background-color:#e2e4e5;
+    background-color: #e2e4e5;
 }
 
 .navbar img {
@@ -570,10 +577,7 @@
 .navbar-nav i:hover {
     color: lightseagreen;
     transition: all ease-in 1s;
-    -webkit-transition: all ease-in 1s;
-    -moz-transition: all ease-in 1s;
-    -ms-transition: all ease-in 1s;
-    -o-transition: all ease-in 1s;
+ 
 }
 
 .nav-link {
@@ -585,10 +589,7 @@
     color: blue;
     border-bottom: violet 1px solid;
     transition: all ease-in-out 1s;
-    -webkit-transition: all ease-in-out 1s;
-    -moz-transition: all ease-in-out 1s;
-    -ms-transition: all ease-in-out 1s;
-    -o-transition: all ease-in-out 1s;
+ 
 }
 
 /*End  Nav*/
@@ -690,9 +691,14 @@
 
 
 .why-me-box {
-    border: lightgray 3px solid;
+    border: lightblue 3px solid;
     padding: 0.5rem;
     margin: 0.5rem;
+    border-radius: 62px 10px 61px 0px;
+    -webkit-border-radius: 62px 10px 61px 0px;
+    -moz-border-radius: 62px 10px 61px 0px;
+    -ms-border-radius: 62px 10px 61px 0px;
+    -o-border-radius: 62px 10px 61px 0px;
 }
 
 .why-me-box:hover {
@@ -720,6 +726,8 @@
     -moz-transition: linear 3s all;
     -ms-transition: linear 3s all;
     -o-transition: linear 3s all;
+    animation: scale-in-top 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: scale-in-top 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .why-me-p {
@@ -738,6 +746,7 @@
 .projects {
     background-color: rgb(250, 250, 250);
 }
+
 .projects h3 {
     font-size: 3rem;
     text-shadow: -1px 10px 0px rgba(0, 0, 0, 0.41);
@@ -745,6 +754,11 @@
     animation: scale-in-top 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     -webkit-animation: scale-in-top 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     text-align: center;
+}
+
+.projects h3 :hover{
+    animation: scale-in-top 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: scale-in-top 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .projects .card {
@@ -755,7 +769,6 @@
 .card-body .project-links a {
     text-align: center;
 }
-
 
 
 
@@ -771,6 +784,18 @@
     -ms-transition: ease-in-out 3s all;
     -o-transition: ease-in-out 3s all;
 }
+
+.card-title{
+    animation: scale-in-top 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: scale-in-top 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.card-title:hover{
+    animation: jello-horizontal 4.5s linear both;
+    -webkit-animation: jello-horizontal 4.5s linear both;
+
+}
+
 
 /*Projects*/
 
@@ -809,11 +834,12 @@
 
 /*Educations*/
 
-.education{
+.education {
     margin-top: 1rem;
     background-color: rgb(250, 250, 250);
     margin-bottom: 1rem;
 }
+
 .education h3 {
     font-size: 3rem;
     text-shadow: -1px 10px 0px rgba(0, 0, 0, 0.41);
@@ -875,7 +901,7 @@
         -moz-transform: translate(0%, 340%);
         -ms-transform: translate(0%, 340%);
         -o-transform: translate(0%, 340%);
-}
+    }
 }
 
 /*Contact Us*/
