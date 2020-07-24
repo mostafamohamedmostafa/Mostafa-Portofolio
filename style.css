@@ -883,31 +883,31 @@
 
 .contact-us {
     animation: flicker-1 5s linear infinite both;
-    -webkit-animation:;
+    -webkit-animation: flicker-1 5s linear infinite both;
 }
-
-.contact-us .list-group {
-    left: 33%;
-    top: 180%;
-    transform: translate(0%, 400%);
+/*
+.details-contact  {
+    left: 10%;
+    top: 10%;
+    transform: translate(0%, 40%);
     position: absolute;
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
+    -webkit-transform: translate(0%, 40%);
+    -moz-transform: translate(0%, 40%);
+    -ms-transform: translate(0%, 40%);
+    -o-transform: translate(0%, 40%);
 }
 
 @media(max-width:768px) {
-    .contact-us .list-group {
+    .details-contact {
         left: 10%;
         top: 10%;
-        transform: translate(0%, 340%);
+        transform: translate(0%, 10%);
         position: absolute;
-        -webkit-transform: translate(0%, 340%);
-        -moz-transform: translate(0%, 340%);
-        -ms-transform: translate(0%, 340%);
-        -o-transform: translate(0%, 340%);
-    }
+        -webkit-transform: translate(0%, 10%);
+        -moz-transform: translate(0%, 10%);
+        -ms-transform: translate(0%, 10%);
+        -o-transform: translate(0%, 10%);
+}
 }
 
 /*Contact Us*/
