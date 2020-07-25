@@ -865,7 +865,7 @@
 
 .table {
     animation: bounce-left 8s both;
-    -webkit-animation: bounce-left 8s both;
+    -webkit-animation:;
 }
 
 /*Educations*/
@@ -873,8 +873,9 @@
 /*Contact Us*/
 .contact-us {
     background-image: url('img/logo_transparent.png');
-    background-position: center fixed;
-    background-size: contain;
+    background-position: center  fixed fixed ;
+    background-size:cover;
+    background-repeat: round;
     height: 50vh;
     text-align: center;
 
@@ -883,31 +884,10 @@
 
 .contact-us {
     animation: flicker-1 5s linear infinite both;
-    -webkit-animation: flicker-1 5s linear infinite both;
-}
-/*
-.details-contact  {
-    left: 10%;
-    top: 10%;
-    transform: translate(0%, 40%);
-    position: absolute;
-    -webkit-transform: translate(0%, 40%);
-    -moz-transform: translate(0%, 40%);
-    -ms-transform: translate(0%, 40%);
-    -o-transform: translate(0%, 40%);
+    -webkit-animation:;
 }
 
-@media(max-width:768px) {
-    .details-contact {
-        left: 10%;
-        top: 10%;
-        transform: translate(0%, 10%);
-        position: absolute;
-        -webkit-transform: translate(0%, 10%);
-        -moz-transform: translate(0%, 10%);
-        -ms-transform: translate(0%, 10%);
-        -o-transform: translate(0%, 10%);
-}
-}
+
+
 
 /*Contact Us*/
