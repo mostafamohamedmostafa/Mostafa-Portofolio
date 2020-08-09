@@ -46,7 +46,7 @@
 /*Start Nav*/
 
 #nav-bar{
-    position: sticky;
+    position: static;
     top:0;
     z-index: 10;
 }
@@ -57,8 +57,7 @@
 .navbar {
     margin-bottom: 0;
     padding: 0;
-    background-color: #e2e4e5;
-
+    background-image: linear-gradient(to right , #c62fdd,#5f1782 );
 }
 
 .navbar img {
@@ -81,21 +80,21 @@
 
 .navbar-nav i {
     padding-left: 0.5rem;
-    color: darkorange;
+    color:lightblue;
 }
 
 .navbar-nav i:hover {
     color: lightseagreen;
     transition: all ease-in 1s;
-    -webkit-transition: all ease-in 1s;
-    -moz-transition: all ease-in 1s;
-    -ms-transition: all ease-in 1s;
-    -o-transition: all ease-in 1s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 
 .nav-link {
     font-weight: 400;
-    color: darkmagenta;
+    color: white;
 }
 
 .nav-item a:hover {
