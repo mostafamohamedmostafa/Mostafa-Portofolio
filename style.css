@@ -44,16 +44,21 @@
 
 
 /*Start Nav*/
-.nav {
-    margin-bottom: 0;
+
+#nav-bar{
     position: sticky;
-    
+    top:0;
+    z-index: 10;
+}
+.nav {
+ 
 }
 
 .navbar {
     margin-bottom: 0;
     padding: 0;
     background-color: #e2e4e5;
+
 }
 
 .navbar img {
