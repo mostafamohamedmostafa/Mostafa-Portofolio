@@ -17,6 +17,17 @@
     background-color: black;
 }
 
+.dark-mode .main-text {
+    color: white;
+}
+.dark-mode .main-text span{
+color: lightskyblue;
+}
+
+.dark-mode .secondary-text{
+    color:teal;
+}
+
 .dark-mode .card .card-body {
     color: white;
     background-color: black;
@@ -41,6 +52,17 @@
 .dark-mode nav {
     background-color: black;
 }
+
+.dark-mode .contact {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .contact .section-title h2{
+    color: white;
+}
+
+
 
 @-webkit-keyframes up-down {
     0% {
@@ -401,24 +423,109 @@ box-shadow: 0px -4px 5px 3px rgba(179,140,179,1);
 
 /*Educations*/
 
-/*Contact Us*/
-.contact-us {
-    background-image: url('img/logo_transparent.png');
-    background-position: center  fixed fixed ;
-    background-size:cover;
-    background-repeat: round;
-    height: 50vh;
+/*<!--Start Contact US Section -->*/
+.contact {
+    background-color: #f9f9fa;
+    height: 100%;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.contact .section-title h2 {
     text-align: center;
+    color: black;
+    font-size: 2rem;
+
 
 }
 
+.contact .section-title p {
+    text-align: center;
+    color: black;
+    font-size: 1.4rem;
 
-.contact-us {
-    animation: flicker-1 5s linear infinite both;
-    -webkit-animation:;
+
+}
+
+.info h4 {
+    color: crimson;
+    font-size: 1.1rem;
+
+}
+
+.info i {
+    padding: 10px 10px;
+    color: blue;
+    font-size: 1.1rem;
+
+}
+
+.contact a:hover {
+    background-color: #2696be;
+    border: white 3px solid;
+    text-decoration: none;
 }
 
 
 
+/*<!--End Contact us  Section -->*/
 
-/*Contact Us*/
+
+/*<!--Start of Footer Section -->*/
+.footer {
+    padding: 0 40px;
+}
+
+.site-info span {
+    font-size: 2rem;
+}
+
+.site-info span:first-of-type {
+    color: #08526d;
+    font-weight: bold;
+}
+
+.site-info span:last-of-type {
+
+    color: #ed242b;
+}
+
+.site-info a {
+    color: #08526d;
+    font-weight: bold;
+}
+
+
+.contact-us ul li {
+    padding-bottom: 25px;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.contact-us i {
+    color: aqua;
+    font-size: 1.5rem;
+}
+
+.contact-us ul li:hover {
+    color: #08526d;
+    transform: scale(1.1);
+    border: #ed1d24 1px solid;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.contact-us img{
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+
+/*<!--End Footer Section -->*/
+
