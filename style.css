@@ -49,12 +49,13 @@
     position: static;
     top:0;
     z-index: 10;
+
 }
 .nav {
- 
 }
 
 .navbar {
+    
     margin-bottom: 0;
     padding: 0;
     background-image: linear-gradient(to right , #c62fdd,#5f1782 );
@@ -74,6 +75,7 @@
 .navbar-nav {
     margin: 1%;
     padding: 1%;
+    width: 100%;
 
 }
 
@@ -95,6 +97,7 @@
 .nav-link {
     font-weight: 400;
     color: white;
+    
 }
 
 .nav-item a:hover {
@@ -110,58 +113,46 @@
 /*End  Nav*/
 
 /*Start  Main*/
-
+.main{
+    background-image: linear-gradient(to right , #c62fdd,#5f1782 );
+    color: white;
+    padding-top: 5%;
+}
 
 
 .main-text {
-    position: absolute;
-    left: 20%;
-    top: 40%;
-    transform: translate(-00%, -40%);
-    color: goldenrod;
+   
     font-size: 3rem;
     font-weight: bolder;
-    -webkit-transform: translate(-00%, -40%);
-    -moz-transform: translate(-00%, -40%);
-    -ms-transform: translate(-00%, -40%);
-    -o-transform: translate(-00%, -40%);
+    padding-top: 10%;
+
 }
 
 .main-text span {
     color: black;
-    animation: text-shadow 2s ease-in-out infinite;
-    -webkit-animation: text-shadow 2s ease-in-out infinite;
+
 }
 
 
 .secondary-text {
     text-shadow: -1px 10px 0px rgba(0, 0, 0, 0.41);
-    position: absolute;
-    left: 50%;
-    top: 70%;
-    transform: translate(-00%, -40%);
     color: black;
     font-size: 2rem;
     font-weight: bolder;
-    animation: scale-in-top 7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    -webkit-transform: translate(-00%, -40%);
-    -moz-transform: translate(-00%, -40%);
-    -ms-transform: translate(-00%, -40%);
-    -o-transform: translate(-00%, -40%);
-    -webkit-animation: scale-in-top 7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
+
 @media(max-width:768px) {
-    .main-text p {
-        font-size: 1.7rem;
+    .main-text  {
+        font-size: 1.5rem;
         text-align: center;
         left: auto;
         max-width: 100%;
     }
 
-    .site-text p {
-        font-size: 1.5rem;
+    .secondary-text {
+        font-size: 1.1rem;
         text-align: center;
         left: auto;
         max-width: 100%;
@@ -180,7 +171,7 @@
 
 
 .why-me h3 {
-    font-size: 2.9rem;
+    font-size: 2.5rem;
     text-shadow: -1px 10px 0px rgba(0, 0, 0, 0.41);
     font-weight: 500;
     animation: scale-in-top 9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -193,6 +184,7 @@
 .why-me p {
     font-style: italic;
     font-weight: 400;
+    
 }
 
 .why-me p:hover {
@@ -206,14 +198,17 @@
 
 
 .why-me-box {
+    -webkit-box-shadow: 0px -4px 5px 3px rgba(179,140,179,1);
+    -moz-box-shadow: 0px -4px 5px 3px rgba(179,140,179,1);
+    box-shadow: 0px -4px 5px 3px rgba(179,140,179,1);
     border: lightblue 3px solid;
     padding: 0.5rem;
     margin: 0.5rem;
     border-radius: 62px 10px 61px 0px;
-    -webkit-border-radius: 62px 10px 61px 0px;
-    -moz-border-radius: 62px 10px 61px 0px;
-    -ms-border-radius: 62px 10px 61px 0px;
-    -o-border-radius: 62px 10px 61px 0px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 
 .why-me-box:hover {
@@ -263,7 +258,7 @@
 }
 
 .projects h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-shadow: -1px 10px 0px rgba(0, 0, 0, 0.41);
     font-weight: 500;
     animation: scale-in-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -279,6 +274,9 @@
 .projects .card {
     margin-bottom: 0.7rem;
     text-align: center;
+    -webkit-box-shadow: 0px -4px 5px 3px rgba(179,140,179,1);
+-moz-box-shadow: 0px -4px 5px 3px rgba(179,140,179,1);
+box-shadow: 0px -4px 5px 3px rgba(179,140,179,1);
 }
 
 .card-body .project-links a {
