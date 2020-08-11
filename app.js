@@ -20,11 +20,12 @@ function convertFormat(time) {
     let format = 'AM'
     if (time >= 12) {
         format = 'PM'
-        var element = document.getElementsByTagName("body");
-    element.classList.add("dark-mode");
+
     }
     return format;
 }
+
+
 
 function checkTime(time) {
     if (time > 12) {
@@ -39,3 +40,7 @@ function checkTime(time) {
 
 showTime();
 setInterval(showTime,1000);
+
+
+
+
