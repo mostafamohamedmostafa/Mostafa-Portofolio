@@ -160,13 +160,11 @@ color: lightskyblue;
 
 
 .main-text {
-   
     font-size: 3rem;
     font-weight: bolder;
     padding-top: 10%;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
-
-
+    -webkit-animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 .main-img{
@@ -203,6 +201,11 @@ color: lightskyblue;
         left: auto;
         max-width: 100%;
     }
+}
+
+.intro-img{
+    width: 100%;
+    height: 5vmax;
 }
 
 /*End  Main*/
