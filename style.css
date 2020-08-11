@@ -247,9 +247,11 @@ box-shadow: 0px -4px 5px 3px white;
 
 .why-me h3 {
     font-size: 2rem;
-    text-shadow: -1px 10px 0px rgba(0, 0, 0, 0.41);
+    text-shadow: -1px 5px 0px rgba(0, 0, 0, 0.41);
     font-weight: 500;
-   
+    text-decoration:underline ;
+    text-decoration-color: #ed1d24;
+    -moz-text-decoration-color: #ed1d24;
 }
 
 
